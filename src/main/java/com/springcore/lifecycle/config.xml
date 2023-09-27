@@ -7,8 +7,16 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/Scontext
     http://www.springframework.org/schema/context/spring-context.xsd">
-
-	<bean class="com.springcore.lifecycle.Sample" name="s1" init-method="init" destroy-method="destroy">
+	
+	<context:annotation-config/>
+	<!-- <bean class="com.springcore.lifecycle.Sample" name="s1" init-method="init" destroy-method="destroy">
 		<property name="price" value="10"/>
+	</bean>
+	<bean class="com.springcore.lifecycle.Sample2" name="s2">
+		<property name="price" value="5"/>
+	</bean> -->
+	
+	<bean class="com.springcore.lifecycle.Example" name="example">
+		<property name="subject" value="Maths"/>
 	</bean>
 </beans>
